@@ -4,12 +4,12 @@ with open("README.md") as fp:
     long_description = fp.read()
 
 setup(
-    name="miniwdl-backend-example",
+    name="miniwdl-colima",
     version="v0.0.1",
-    description="miniwdl container backend example",
+    description="miniwdl container backend for colima",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    author="Wid L. Hacker",
+    author="Chris Tomkins-Tinch",
     python_requires=">=3.6",
     packages=find_packages(),
     install_requires=["miniwdl>=1.9.0"],
@@ -22,7 +22,7 @@ setup(
     #   of the TaskContainer abstract base class.
     entry_points={
         "miniwdl.plugin.container_backend": [
-            "example_docker_run = miniwdl_backend_example:DockerRun"
+            "miniwdl_colima = miniwdl_colima:DockerRun"
         ],
     },
 )

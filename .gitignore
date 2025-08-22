@@ -5,3 +5,4 @@ RELEASE-VERSION
 dist/
 *.egg-info/
 build/
+.DS_Store

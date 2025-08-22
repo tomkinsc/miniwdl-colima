@@ -35,7 +35,7 @@ class DockerRun(WDL.runtime.task_container.TaskContainer):
         }
         logger.info(
             _(
-                "initialized miniwdl_backend_example DockerRun plugin",
+                "initialized miniwdl_colima DockerRun plugin",
                 resource_limits=cls._resource_limits,
             )
         )

@@ -14,7 +14,7 @@ source "$BASH_TAP_ROOT/bash-tap-bootstrap"
 
 # activate plugin
 pip3 install .
-export MINIWDL__SCHEDULER__CONTAINER_BACKEND=example_docker_run
+export MINIWDL__SCHEDULER__CONTAINER_BACKEND=miniwdl_colima
 
 # provision temp test directory
 DN="$(mktemp -d)"
